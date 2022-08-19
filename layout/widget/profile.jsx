@@ -72,8 +72,11 @@ class Profile extends Component {
                         </div>
                     </div>
                 </nav>
-                {followLink ? <div class="level">
+                {/* {followLink ? <div class="level">
                     <a class="level-item button is-primary is-rounded" href={followLink} target="_blank" rel="noopener">{followTitle}</a>
+                </div> : null} */}
+                {followLink ? <div class="level">
+                    <a class="level-item button is-info is-outlined is-rounded" href="/" target="_self" rel="noopener">Home</a>
                 </div> : null}
                 {socialLinks ? this.renderSocialLinks(socialLinks) : null}
             </div>
